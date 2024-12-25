@@ -5,15 +5,16 @@ import { getFirestore } from 'firebase/firestore';
 
 import { getAnalytics } from "firebase/analytics";
 import {ApiKey,AuthDomain,ProjectId,StorageBucket,MessagingSenderId,AppId,MeasurementId} from "./configs";
-
+import  dotenv from "dotenv";
+dotenv.config();
 const firebaseConfig = {
-  apiKey: ApiKey,
-  authDomain: AuthDomain,
-  projectId: ProjectId,
-  storageBucket:StorageBucket,
-  messagingSenderId:MessagingSenderId,
-  appId: AppId,
-  measurementId: MeasurementId
+  apiKey: process.env.ApiKey,
+  authDomain: process.env.AuthDomain,
+  projectId: process.env.ProjectId,
+  storageBucket: process.env.StorageBucket,
+  messagingSenderId:process.env.MessagingSenderId,
+  appId: process.env.AppId,
+  measurementId: process.env.MeasurementId,
 };
 
 // Initialize Firebase
