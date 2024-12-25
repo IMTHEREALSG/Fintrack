@@ -4,7 +4,7 @@ import { getFirestore } from 'firebase/firestore';
 
 
 import { getAnalytics } from "firebase/analytics";
-import {ApiKey,AuthDomain,ProjectId,StorageBucket,MessagingSenderId,AppId,MeasurementId} from "./configs";
+
 import  dotenv from "dotenv";
 dotenv.config();
 const firebaseConfig = {
